@@ -6,12 +6,6 @@ import { createTorus } from "./createTorus"
 
 export async function main() {
 
-  /*
-  const {
-    positions,
-    triangles,
-  } = createBox()
-  */
   const {
     positions,
     triangles,
@@ -90,7 +84,6 @@ export async function main() {
   gl.vertexAttribPointer(normalLocation, 3, gl.FLOAT, false, 0, 0)
   gl.enableVertexAttribArray(normalLocation)
   gl.bindBuffer(gl.ARRAY_BUFFER, null)
-
 
   gl.useProgram(program)
 
